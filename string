@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <ctype.h>
+
+void teste(char c[]){
+    int i, nd = 0;
+    for (i = 0; c[i] != '\0'; i++){
+        nd = isdigit(c[i]); 
+        nd++;
+        
+    }
+    printf ("%d dígitos", nd);
+
+}
+
+int main()
+{
+    char str[80];
+    scanf("%[^\n]", str);
+    teste(str);
+    
+    
+    return 0;
+}
